@@ -1,18 +1,8 @@
-"""
- Pygame base template for opening a window
-
- Sample Python/Pygame Programs
- Simpson College Computer Science
- http://programarcadegames.com/
- http://simpson.edu/computer-science/
-
- Explanation video: http://youtu.be/vRB_983kUMc
-"""
 
 import pygame
 import random
 
-# Define some colors
+# Some colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
@@ -22,14 +12,14 @@ BLUE = (0, 0, 255)
 
 pygame.init()
 
-# Set the width and height of the screen [width, height]
+# Sets the width and height of the screen [width, height]
 size = (700, 500)
 screen = pygame.display.set_mode(size)
 bg = pygame.image.load("gwcpic3.png")
 pygame.display.set_caption("Snow")
 
 color = WHITE
-# Your SnowFlake class
+# My SnowFlake class
 class SnowFlake:
     
     def __init__(self, x_location, y_location, fall_Speed, flake_size):  
@@ -57,7 +47,7 @@ class SnowFlake:
 
         
 
-# Loop until the user clicks the close button.
+# Loops until the user clicks the close button.
 done = False
 
 # Used to manage how fast the screen updates
@@ -104,10 +94,10 @@ while not done:
  
 
     # End Snow
-    # --- Go ahead and update the screen with what we've drawn.
+    # --- Updates the screen with what I've drawn.
     pygame.display.flip()
 
-    # --- Limit to 60 frames per second
+    # --- Limits to 60 frames per second
     clock.tick(60)
 
 # Close the window and quit.
